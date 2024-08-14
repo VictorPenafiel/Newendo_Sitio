@@ -5,169 +5,159 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  
-  
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <title>Mi portafolio web</title>
+  <title>Newendo</title>
 </head>
 
-  <body class="bg-light">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Offcanvas navbar</a>
-        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Notifications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Switch account</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Settings</a>
-              <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+<body>
+  <div class="col-4 offset-5">
+    <img src="assets/img/logo.jpg" alt="logo" height="137">
+</div>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white mb-9">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+                    <a href="{% url 'indice' %}"><button type="button" class="btn btn-outline-dark">Inicio</button></a>
+                    <a href="{% url 'bienvenido' %}"><button type="button" class="btn btn-outline-dark">Bienvenido</button></a>
+                    <a href="{% url 'acerca' %}"><button type="button" class="btn btn-outline-dark">¿Quiénes somos?</button></a>
+                    <a href="{% url 'nutricion' %}"><button type="button" class="btn btn-outline-dark">Nutrición</button></a>
+                    <a href="{% url 'clima' %}"><button type="button" class="btn btn-outline-dark">Clima</button></a>
+                    <a href="{% url 'contacto' %}"><button type="button" class="btn btn-outline-dark">Contacto</button></a>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-warning pt-0 pb-0">
+  <div class="container-fluid fs-5 d-flex justify-content-center">
+    <a class="navbar-brand fs-3" href="#">Tecnologías del yo dedicadas a la deconstrucción del ser, a través, de la modificación corporal.</a>
+  </div>
+</nav>
 
 
-    <div class="nav-scroller bg-body shadow-sm">
-      <nav class="nav nav-underline" aria-label="Secondary navigation">
-        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-        <a class="nav-link" href="#">
-          Friends
-          <span class="badge bg-light text-dark rounded-pill align-text-bottom">27</span>
-        </a>
-        <a class="nav-link" href="#">Explore</a>
-        <a class="nav-link" href="#">Suggestions</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-      </nav>
-    </div>
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="img\multi_renacimiento.Pablo.jpg" class="img-fluid" alt="">
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-1 mx-5 px-5">
+      <div class="col px-5">
+        <div class="card h-100">
+          <img src="assets/img/Mezieres1.jpg" class="card-img-top" alt="Buenos Aires">
+          <div class="card-body">
+            <h5 class="card-title">Françoise Mézières</h5>
+            <p class="card-text">Françoise Mézières  fue una fisioterapeuta francesa, creadora del concepto de cadenas musculares y del Método Mézières.</p>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>Newendo</h3>
-            <p class="fst-italic">
-              Tecnología del yo dedicada a la deconstrucción del ser, a través, de la modificación corporal.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Yogaaaa</li>
-              <li><i class="ri-check-double-line"></i> Rolfing</li>
-              <li><i class="ri-check-double-line"></i> Método Mézières</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-            </p>
+          <div class="card-footer">
+            <small class="text-muted"><a href="#" class="stretched-link">Ver más</a></small>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Section -->
-
-
-
-
-
-
-    <div class="container">
-      <footer class="py-5">
-        <div class="row">
-          <div class="col-2">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
+      <div class="col px-5">
+        <div class="card h-100">
+          <img src="assets/img/ida-rolfing.jpg" class="card-img-top" alt="Machu Pichu">
+          <div class="card-body">
+            <h5 class="card-title">Ida Rolf</h5>
+            <p class="card-text">El rolfing es una técnica que masajea la fascia o tejido conjuntivo, que envuelve músculos y huesos.</p>
           </div>
-    
-          <div class="col-2">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-          </div>
-    
-          <div class="col-2">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-          </div>
-    
-          <div class="col-4 offset-1">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of whats new and exciting from us.</p>
-              <div class="d-flex w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary" type="button">Subscribe</button>
-              </div>
-            </form>
+          <div class="card-footer">
+            <small class="text-muted"><a href="#" class="stretched-link">Ver más</a></small>
           </div>
         </div>
-    
-        <div class="d-flex justify-content-between py-4 my-4 border-top">
-          <p>&copy; 2021 Company, Inc. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-          </ul>
+      </div>
+      <div class="col px-5">
+        <div class="card h-100">
+          <img src="assets/img/Alexander-Lowen-1.jpg" class="card-img-top" alt="Rio de Janeiro">
+          <div class="card-body">
+            <h5 class="card-title">Alexander Lowen</h5>
+            <p class="card-text">Es una de las de las teorías psicoterapias corporales más utilizadas , dichas tecnicas incluyen el trabajo corporal en el tratamiento del paciente.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><a href="#" class="stretched-link">Ver más</a></small>
+          </div>
         </div>
-      </footer>
+      </div>
     </div>
+    <div class="container-fluid"> <!-- Asegúrate de tener un contenedor fluido si quieres que las tarjetas ocupen toda la pantalla -->
+      <div class="row row-cols-1 row-cols-md-2 g-4 mt-1 mx-5 px-5"> <!-- Cambiado a row-cols-md-2 para dos columnas en pantallas medianas o más grandes -->
+        <div class="col-12 col-md-6 px-5"> <!-- Cada tarjeta ahora ocupa 12 columnas en pantallas pequeñas y 6 en pantallas medianas o más grandes -->
+          <div class="card h-100">
+            <img src="assets/img/Patanjali.jpg" class="card-img-top" alt="Buenos Aires">
+            <div class="card-body">
+              <h5 class="card-title">Patanjali</h5>
+              <p class="card-text">El Yoga Sutra de Patanjali es un texto tradicional de yoga compilado hace dos milenios.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="#" class="stretched-link">Ver más</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 px-5"> <!-- Mismo cambio aquí -->
+          <div class="card h-100">
+            <img src="assets/img/Nietzsche.bmp" class="card-img-top" alt="Machu Pichu">
+            <div class="card-body">
+              <h5 class="card-title">Friedrich Nietzsche</h5>
+              <p class="card-text">Voluntad de poder</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="#" class="stretched-link">Ver más</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+<!-- footer -->
+<footer class="pie-pagina container-fluid mt-3">
+  <div class="grupo-1 d-flex flex-wrap justify-content-between align-items-center">
+      <div class="box mb-3 mb-md-0">
+          <figure>
+              <a href="#" aria-label="Ir al inicio">
+                  <img src="assets/img/logo.jpg" alt="Logo Newendo" height="167">
+              </a>
+          </figure>
+      </div>
+      <div class="box mb-3 mb-md-0">
+          <h2 class="mb-2">Newendo</h2>
+          <p class="text-muted">El camino de la energía es una tecnología del yo dedicada a la deconstrucción del ser por medio de la guerra contra el cansancio.</p>
+      </div>
+  </div>
+</footer>
+<footer id="Footer" class="container-fluid bg-warning">
+  <div class="container">
+    <div class="row">
+        <div class="text-end py-2">
+          <h6>Puedes contactarme en mis redes sociales.</h6>
+          <a href="https://github.com/victorPenafiel" target="blank">
+            <i class="fab fa-github-square fa-2x mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+            </i>
+          </a>
+          <a href="https://www.linkedin.com/in/victorpenafiel/" target="blank">
+            <i class="fab fa-linkedin fa-2x mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+            </i>
+          </a>
+          <a href="https://twitter.com/Newen_Do" target="_blank">
+            <i class="fab fa-twitter-square fa-2x mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+            </i>
+          </a>
+          <a href="https://web.facebook.com/victorpenafiel?_rdc=1&_rdr" target="_blank">
+            <i class="fab fa-facebook-square fa-2x mx-2"data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"></script>
